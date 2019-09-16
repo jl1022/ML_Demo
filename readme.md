@@ -741,7 +741,7 @@ labels.value_counts().plot(kind='bar')
 
 
 
-![png](./md_source/output_19_1.png)
+![png](./md_resource/output_19_1.png)
 
 
 
@@ -758,7 +758,7 @@ features_df['Cabin'].value_counts().sort_values(ascending=False).head(20).plot(k
 
 
 
-![png](./md_source/output_20_1.png)
+![png](./md_resource/output_20_1.png)
 
 
 
@@ -775,7 +775,7 @@ features_df['Sex'].value_counts().sort_values(ascending=False).plot(kind='pie')
 
 
 
-![png](./md_source/output_21_1.png)
+![png](./md_resource/output_21_1.png)
 
 
 
@@ -792,7 +792,7 @@ features_df['Age'].plot(kind='hist')#注意：有别于条形图，这里会将�
 
 
 
-![png](./md_source/output_22_1.png)
+![png](./md_resource/output_22_1.png)
 
 
 
@@ -809,7 +809,7 @@ features_df['Age'].plot(kind='box')#可见有绝大部分是20-40岁的年轻人
 
 
 
-![png](./md_source/output_23_1.png)
+![png](./md_resource/output_23_1.png)
 
 
 
@@ -826,7 +826,7 @@ features_df.groupby('Pclass')['Fare'].mean().plot(kind='bar')#Pclass 1,2,3分别
 
 
 
-![png](./md_source/output_24_1.png)
+![png](./md_resource/output_24_1.png)
 
 
 
@@ -849,7 +849,7 @@ features_df.groupby('Age_bin')['Fare'].mean().plot(kind='bar')
 
 
 
-![png](./md_source/output_25_1.png)
+![png](./md_resource/output_25_1.png)
 
 
 
@@ -866,7 +866,7 @@ features_df.groupby('Age_bin')['Fare'].mean().rolling(3).mean().plot(kind='line'
 
 
 
-![png](./md_source/output_26_1.png)
+![png](./md_resource/output_26_1.png)
 
 
 
@@ -883,7 +883,7 @@ features_df.groupby('Embarked')['Pclass'].mean().plot.bar()
 
 
 
-![png](./md_source/output_27_1.png)
+![png](./md_resource/output_27_1.png)
 
 
 
@@ -905,7 +905,7 @@ sns.heatmap(show_df)
 
 
 
-![png](./md_source/output_28_1.png)
+![png](./md_resource/output_28_1.png)
 
 
 **注意float.nan无法通过fillna填充**  
@@ -928,7 +928,7 @@ sns.heatmap(show_df.corr())
 
 
 
-![png](./md_source/output_30_1.png)
+![png](./md_resource/output_30_1.png)
 
 
 可以发现是否存活与Fare/票价的正相关性最强，与Pclass负相关性最强
@@ -1767,7 +1767,7 @@ titanic_min_max_df['Age'].plot(kind='hist')
 
 
 
-![png](./md_source/output_56_1.png)
+![png](./md_resource/output_56_1.png)
 
 
 
@@ -1783,7 +1783,7 @@ titanic_z_score_df['Age'].plot(kind='hist')
 
 
 
-![png](./md_source/output_57_1.png)
+![png](./md_resource/output_57_1.png)
 
 
 
@@ -1800,7 +1800,7 @@ titanic_normalize_df['Age'].plot(kind='hist')
 
 
 
-![png](./md_source/output_58_1.png)
+![png](./md_resource/output_58_1.png)
 
 
 
@@ -1820,7 +1820,7 @@ features_df['Age'].apply(lambda x:norm.pdf((x-age_mean)/age_std)).plot(kind='his
 
 
 
-![png](./md_source/output_59_1.png)
+![png](./md_resource/output_59_1.png)
 
 
 
@@ -1837,7 +1837,7 @@ features_df['Age'].apply(lambda x:norm.cdf((x-age_mean)/age_std)).plot(kind='his
 
 
 
-![png](./md_source/output_60_1.png)
+![png](./md_resource/output_60_1.png)
 
 
 
@@ -1854,7 +1854,7 @@ features_df['Age'].apply(lambda x:np.log1p(x)).plot(kind='hist')
 
 
 
-![png](./md_source/output_61_1.png)
+![png](./md_resource/output_61_1.png)
 
 
 
@@ -1876,7 +1876,7 @@ plt.hist(boxcox(features_df['Age'])[0])
 
 
 
-![png](./md_source/output_62_1.png)
+![png](./md_resource/output_62_1.png)
 
 
 
@@ -2466,7 +2466,7 @@ show_df.groupby('family_size')['Survived'].mean().plot(kind='bar')
 
 
 
-![png](./md_source/output_94_1.png)
+![png](./md_resource/output_94_1.png)
 
 
 
@@ -2482,7 +2482,7 @@ show_df.groupby('family_size')['Survived'].count().plot(kind='bar')
 
 
 
-![png](./md_source/output_95_1.png)
+![png](./md_resource/output_95_1.png)
 
 
 
@@ -2742,7 +2742,7 @@ plt.ylabel(u'distortion degree')
 
 
 
-![png](./md_source/output_103_1.png)
+![png](./md_resource/output_103_1.png)
 
 
 
@@ -3797,7 +3797,7 @@ plt.show()
 ```
 
 
-![png](./md_source/output_161_0.png)
+![png](./md_resource/output_161_0.png)
 
 
 #### 4.1.3-lda
@@ -3844,7 +3844,7 @@ plt.show()
 ```
 
 
-![png](./md_source/output_164_0.png)
+![png](./md_resource/output_164_0.png)
 
 
 #### 4.1.3 lle-局部线性嵌入（LocallyLinearEmbedding）
@@ -3881,7 +3881,7 @@ plt.show()
 ```
 
 
-![png](./md_source/output_168_0.png)
+![png](./md_resource/output_168_0.png)
 
 
 #### 4.1.4 ae-自编码
@@ -4473,7 +4473,7 @@ plt.show()
 ```
 
 
-![png](./md_source/output_183_0.png)
+![png](./md_resource/output_183_0.png)
 
 
 特征转换似乎都不能提高效果
